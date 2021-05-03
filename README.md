@@ -1,2 +1,2 @@
 # gildcointrading-project
- four files the website , user back end and admin sample
+the website , user back end and admin sample
