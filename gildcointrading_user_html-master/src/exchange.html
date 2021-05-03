@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- custom CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="assets/ico/favicon.png" type="image/png">
+        <link rel="icon" href="assets/ico/favicon.png" type="image/png">
+
+        <title>Exchange • Gildcoin Trading</title>
+    </head>
+    <body class="bg-dark">
+
+        <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+            
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logos/gildcoin_logo_negative.svg" alt="" style="height: 40px;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    
+
+                    <div class="buttons ms-auto">
+
+                        <div class="btn-group btn-group_notif me-2" role="group">
+
+                            <button id="btnGroupNotif" type="button" class="btn btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+
+                                <span class="badge rounded-pill bg-danger">12</span>
+                            </button>
+                        
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="btnGroupNotif">
+                                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                            </ul>
+                        </div>
+                        <!-- /btn-group -->
+
+                        <a href="wallet.html" class="acc_bal text-end">
+                            <span>Account Balance:</span>
+                            <h5 class="m-0">$20,987.00</h5>
+                        </a>
+                        
+                        <div class="btn-group">
+                            <a href="buy.html" class="btn btn-lg btn-outline-primary px-4">Buy</a>
+                            <a href="sell.html" class="btn btn-lg btn-outline-primary px-4">Sell</a>
+                        </div>
+
+                        <div class="btn-group btn-group_user" role="group">
+
+                            <button id="btnGroupDrop1" type="button" class="btn btn-lg dropdown-toggle px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i> Gathirwa
+                            </button>
+                        
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark text-light" aria-labelledby="btnGroupDrop1">
+                                
+                                <li>
+                                    <a class="dropdown-item" href="account.html">
+                                        <i class="fal fa-user"></i> My Account
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                                <li><hr class="dropdown-divider"></li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" href="wallet.html">
+                                        <i class="far fa-wallet"></i> My Wallet
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" href="#none" data-bs-toggle="modal" data-bs-target="#depositModal">
+                                        <i class="fal fa-plus-circle"></i> Deposit Cash
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" href="wallet.html#withdraw">
+                                        <i class="fal fa-minus-circle"></i> Withdraw Cash
+                                    </a>
+                                </li>
+                                <!-- /li -->
+                                
+                                <li><hr class="dropdown-divider"></li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#logoutModal" href="#">
+                                        <i class="far fa-sign-out"></i> Log Out
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                            </ul>
+                            <!-- /dropdown-menu -->
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /buttons -->
+                </div>
+                <!-- /navbar-collapse -->               
+            </div>
+            <!-- /container-fluid -->
+
+        </nav>
+        <!-- /nav -->
+
+        <div class="container-fluid text-light">
+            
+            <div class="row mt-2 gx-2">
+                
+                <div class="col-md-1">
+                    
+                    <ul class="nav nav_left flex-column text-center">
+                        
+                        <li class="nav-item">
+                            <a href="dash_board.html" class="nav-link">
+                                <h4><i class="fal fa-tachometer-alt-slow"></i></h4>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <h4><i class="fal fa-briefcase"></i></h4>
+                                <span>Trade Room</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="historical_prices.html" class="nav-link">
+                                <h4><i class="fal fa-chart-bar"></i></h4>
+                                <span>Historical Prices</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="trading_history.html" class="nav-link">
+                                <h4><i class="fal fa-history"></i></h4>
+                                <span>Trading History</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="wallet.html" class="nav-link active">
+                                <h4><i class="far fa-wallet"></i></h4>
+                                <span>My Wallet</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="#none" data-bs-toggle="modal" data-bs-target="#leaderBoardModal" class="nav-link">
+                                <h4><i class="fal fa-award"></i></h4>
+                                <span>Leader Board</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                    </ul>
+
+                </div>
+                <!-- /left col -->
+
+                <div class="col-md-9 offset-md-1">
+
+                    <div class="card bg-dark mt-5">
+                        
+                        <div class="card-header">
+                            <div class="btn-group">
+                                <a href="wallet.html" class="btn btn-outline-secondary">Wallet</a>
+                                <a href="buy.html" class="btn btn-outline-secondary active" aria-current="page">Buy / Sell</a>
+                            </div>
+                        </div>
+                        <!-- /card-header -->
+
+                        <div class="card-body">
+                            
+                            <p style="min-height: 400px;">xxx</p>
+                        </div>
+                        <!-- /card-body -->
+                    </div>
+                    <!-- /card -->
+
+                </div>
+                <!-- /right_col -->
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container-fluid -->
+
+        <nav class="navbar navbar_bottom fixed-bottom navbar-dark bg-dark text-light">
+            
+            <div class="container-fluid">
+                
+                <div class="row">
+                    
+                    <div class="col-6">
+                        <i class="far fa-clock"></i> Current Time: <span class="timeInsert">12:23:43</span> • 14 January, 2020 (GMT +3)
+                    </div>
+                    <!-- /col -->
+
+                    <div class="col-6 text-end">
+                        <a href="#none" class="btn btn-outline-secondary btn-sm"><i class="far fa-user-friends"></i> Partnerships</a>
+
+                        <a href="#none" class="btn btn-primary btn-sm"><i class="far fa-comments"></i> Support</a>
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container-fluid -->
+
+        </nav>
+        <!-- /nav -->
+
+        <div class="toast toast_cookies d-flex" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                    
+            <div class="toast-body">
+                We use cookies to understand how you use our site and to improve your experience. By continuing to use our website you agree to their use. <a href="#none">More info</a>
+            </div>
+            
+            <button type="button" class="btn-close ms-auto me-2 mt-2" data-bs-dismiss="toast" aria-label="Close"></button>
+        
+        </div>                
+        <!-- /toast -->
+
+        <!-- modals -->
+        
+        <div class="modal modal_logout fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        
+                        <h5 class="modal-title" id="logoutModalLabel">
+                            Log Out
+                        </h5>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <p class="mb-0 fs-5">Gathirwa, are you sure you want to log out?</p>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+                        
+                        <a href="#none" class="btn btn-primary"><i class="far fa-sign-out"></i>
+                            Log Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /logoutModal -->
+
+        <div class="modal modal_deposit fade" id="depositModal" tabindex="-1" aria-labelledby="depositModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        
+                        <h5 class="modal-title" id="depositModalLabel">
+                            Deposit Cash
+                        </h5>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- /modal-header -->
+                    
+                    <div class="modal-body">
+                        <div class="container-fluid container-fluid-deposit">
+                            <div class="row g-2">
+                                
+                                <div class="col-md-3 col_pills">
+                                    
+                                    <div class="nav flex-column nav-pills nav-pills_visa" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        
+                                        <a class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+                                            
+                                            <div class="row g-1">
+                                                <div class="col-3">
+                                                    <img src="assets/img/logos/visa_mastercard.svg" class="img-fluid" style="width: 40px;" alt="">
+                                                </div>
+                                                
+                                                <div class="col-9">
+                                                    <p class="p-0 m-0 text-secondary">Visa / Mastercard</p>
+                                                    <p class="p-0 m-0 text-muted">Instant</p>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                        <!-- /nav-link -->
+                                        
+                                        <a class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">
+                                            
+                                            <div class="row g-1">
+                                                
+                                                <div class="col-3">
+                                                    <img src="assets/img/logos/mpesa.svg" class="img-fluid" style="width: 40px;" alt="">
+                                                </div>
+                                                
+                                                <div class="col-9">
+                                                    <p class="p-0 m-0 text-secondary">Mpesa</p>
+                                                    <p class="p-0 m-0 text-muted">Instant</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- /nav-link -->
+
+                                    </div>
+                                    <!-- /nav -->
+
+                                </div>
+                                <!-- /col -->
+
+                                <div class="col-md-9">
+                                    
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        
+                                        <div class="tab-pane tab-pane_visa fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                                            
+                                            <form action="wallet.html">
+                                                
+                                                <div class="row row_cards mb-3 g-0">
+                                                
+                                                    <div class="col-8">
+                                                        
+                                                        <div class="card-a p-3 pt-5">
+                                                            
+                                                            <div class="mb-3 mt-3 pe-3">
+                                                                <input name="card_number" type="number" class="form-control form-control-lg" placeholder="Card Number" required="required">
+                                                            </div>
+
+                                                            <div class="row g-2 pe-3">
+                                                                
+                                                                <div class="col-5 valid_thru align-content-center mb-3">
+                                                                    <p class="m-0 text-end text-light">VALID</p>
+                                                                    <p class="m-0 text-end text-light">THRU</p>
+                                                                </div>
+                                                                
+                                                                <div class="col-3 mb-3">
+                                                                    
+                                                                     <input name="mm" type="number" class="form-control form-control-lg" placeholder="MM" maxlength="2" required="required">
+
+                                                                </div>
+                                                                
+                                                                <div class="col-1 align-items-middle text-light"> 
+                                                                    <h1 class="slash text-center m-0">/</h1> 
+                                                                </div>
+                                                                
+                                                                <div class="col-3 mb-3">
+
+                                                                    <input name="yy" type="number" class="form-control form-control-lg" placeholder="YY" maxlength="2" required="required">
+                                                                    
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- /row -->
+
+                                                             <div class="pe-3">
+                                                                <input name="card_holder" type="text" class="form-control form-control-lg" placeholder="Card Holder" required="required">
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- /card-a -->
+
+                                                    </div>
+                                                    <!-- /col -->
+                                                    
+                                                    <div class="col-4">
+                                                        
+                                                        <div class="card-b p-3">
+                                                            
+                                                            <div class="strip"></div>
+
+                                                            <div class="row">
+                                                                <div class="col-8 offset-2">
+                                                                    
+                                                                    <input name="cvc" type="number" class="cvc form-control form-control-lg mb-0" placeholder="CVC" maxlength="3" required="required">
+
+                                                                    <p class="cvc_text text-light"><small>The last 3 digits on the reverse</small></p>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /col -->
+                                                </div>
+                                                <!-- /row -->
+
+                                                <div class="row g-1">
+
+                                                    <div class="col-3">
+                                                        
+                                                        <select name="currency" class="form-select form-select-lg" required="required">
+                                                            <option selected>Currency</option>
+                                                            <option value="1">&#36; USD</option>
+                                                            <option value="2">&#128; EUR</option>
+                                                            <option value="3">&#163; GBP</option>
+                                                        </select>
+
+                                                    </div>
+                                                    <!-- /col -->
+
+                                                    <div class="col-6">
+                                                        
+                                                            
+                                                        <div class="input-group">
+
+                                                            <span class="input-group-text">&#36;</span>
+                                                            
+                                                            <input name="amount" type="text" class="form-control form-control-lg" placeholder="Amount" required="required">
+
+                                                        </div>
+                                                            
+
+                                                    </div>
+                                                    <!-- /col -->
+
+                                                    <div class="col-3">
+                                                        <div class="d-grid">
+                                                            <button class="btn btn-lg btn-primary" type="submit">Continue</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /col -->
+
+                                                </div>
+                                                <!-- /row -->
+
+                                            </form>
+                                        
+
+                                        </div>
+                                        <!-- /tab-pane -->
+                                        
+                                        <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                                            MPESA details here.
+                                        </div>
+                                        <!-- /tab-pane -->
+                                    </div>
+                                    <!-- /tab-content -->
+
+                                </div>
+                                <!-- /col -->
+
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /container-fluid -->
+                    </div>
+                    <!-- /modal-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /depositModal -->
+
+        <div class="modal modal_leader_board fade" id="leaderBoardModal" tabindex="-1" aria-labelledby="leaderBoardModalLabel" aria-hidden="true">
+            
+            <div class="modal-dialog modal-dialog-scrollable modal-sm">
+                
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        
+                        <h5 class="modal-title" id="leaderBoardModalLabel">
+                            Leader Board
+                        </h5>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- /modal-header -->
+                    
+                    <div class="modal-body">
+                        <p class="mb-0 fs-5">Leaders of the week</p>
+
+                        <table class="table table_leader_board table-sm table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="width: 1%;"></th>
+                                    <th style="width: 1%;"></th>
+                                    <th></th>
+                                    <th style="width: 1%;"></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Joe Biden</td>
+                                    <td>$20,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Donald Trump</td>
+                                    <td>$19,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Barack Obama</td>
+                                    <td>$18,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Hillary Clinton</td>
+                                    <td>$17,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>John McCain</td>
+                                    <td>$16,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Susan Rice</td>
+                                    <td>$15,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>James Brown</td>
+                                    <td>$14,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>8</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Michael Jackson</td>
+                                    <td>$13,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>James Kamau</td>
+                                    <td>$12,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>10</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Michelle Obama</td>
+                                    <td>$11,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>11</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Michael Pence</td>
+                                    <td>$10,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>12</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Larry King</td>
+                                    <td>$9,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>13</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Jackson</td>
+                                    <td>$8,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>14</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>David Peterson</td>
+                                    <td>$7,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>15</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Jeremy Wahome</td>
+                                    <td>$6,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>16</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Mswati Mfalme</td>
+                                    <td>$5,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>17</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Anthony Biden</td>
+                                    <td>$4,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>18</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Tarrus Riley</td>
+                                    <td>$3,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>19</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Uhuru Kenyatta</td>
+                                    <td>$2,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>20</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Mercy Rincuni</td>
+                                    <td>$1,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>21</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Christa Marianne</td>
+                                    <td>$900</td>
+                                </tr>
+
+                                <tr>
+                                    <td>22</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$800</td>
+                                </tr>
+
+                                <tr>
+                                    <td>23</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>James Mwangi</td>
+                                    <td>$700</td>
+                                </tr>
+
+                                <tr>
+                                    <td>24</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>David Adolwa</td>
+                                    <td>$600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>25</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Mary Wanjiku</td>
+                                    <td>$500</td>
+                                </tr>
+
+                                <tr>
+                                    <td>26</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$400</td>
+                                </tr>
+
+                                <tr>
+                                    <td>27</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$300</td>
+                                </tr>
+
+                                <tr>
+                                    <td>28</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$200</td>
+                                </tr>
+
+                                <tr>
+                                    <td>29</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$100</td>
+                                </tr>
+
+                                <tr>
+                                    <td>30</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$90</td>
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    <!-- /modal-body -->
+                    
+                </div>
+                <!-- /modal-content -->
+            </div>
+            <!-- /modal-dialog -->
+        </div>
+        <!-- /leaderBoardModal -->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!-- General site JS file -->
+        <script src="assets/js/site.js"></script>
+        
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+
+        <script>
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+        
+        -->
+
+    </body>
+</html>

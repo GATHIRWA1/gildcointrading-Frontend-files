@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- custom CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="assets/ico/favicon.png" type="image/png">
+        <link rel="icon" href="assets/ico/favicon.png" type="image/png">
+
+        <title>Delete • Gildcoin Trading</title>
+    </head>
+    <body>
+
+        <nav class="navbar sticky-top navbar-dark bg-dark navbar-expand-lg">
+            
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logos/gildcoin_logo_negative.svg" alt="" style="height: 40px;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                    <div class="btn-group ms-3">
+                        <a href="buy.html" class="btn btn-lg btn-outline-primary px-4">Buy</a>
+                        <a href="sell.html" class="btn btn-lg btn-outline-primary px-4">Sell</a>
+                    </div>
+                    
+                    <div class="buttons ms-auto">
+
+                        <div class="btn-group btn-group_notif me-2" role="group">
+
+                            <button id="btnGroupNotif" type="button" class="btn btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+
+                                <span class="badge rounded-pill bg-danger">12</span>
+                            </button>
+                        
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="btnGroupNotif">
+                                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                            </ul>
+                        </div>
+                        <!-- /btn-group -->
+
+                        <a href="wallet.html" class="acc_bal text-end">
+                            <span>Account Balance:</span>
+                            <h5 class="m-0">$20,987.00</h5>
+                        </a>
+                        
+                        <div class="btn-group btn-group_user" role="group">
+
+                            <button id="btnGroupDrop1" type="button" class="btn btn-lg dropdown-toggle px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fal fa-user"></i> Gathirwa
+                            </button>
+                        
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark text-light" aria-labelledby="btnGroupDrop1">
+                                
+                                <li>
+                                    <a class="dropdown-item" href="account.html">
+                                        <i class="fal fa-user"></i> My Account
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                                <li><hr class="dropdown-divider"></li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" href="wallet.html">
+                                        <i class="far fa-wallet"></i> My Wallet
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" href="#none" data-bs-toggle="modal" data-bs-target="#depositModal">
+                                        <i class="fal fa-plus-circle"></i> Deposit Cash
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" href="wallet.html#withdraw">
+                                        <i class="fal fa-minus-circle"></i> Withdraw Cash
+                                    </a>
+                                </li>
+                                <!-- /li -->
+                                
+                                <li><hr class="dropdown-divider"></li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#logoutModal" href="#">
+                                        <i class="far fa-sign-out"></i> Log Out
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                            </ul>
+                            <!-- /dropdown-menu -->
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /buttons -->
+                </div>
+                <!-- /navbar-collapse -->               
+            </div>
+            <!-- /container-fluid -->
+
+        </nav>
+        <!-- /nav -->
+
+        <div class="container-fluid mt-5" style="max-width: 1000px;">
+
+            <header class="row g-0 header_steps py-4 mb-4">
+                    
+                <div class="col text-center active">
+                    <span class="h6">Payment Method</span>
+                </div>
+
+                <div class="col text-center">
+                    <span class="h6">Trade Pricing</span>
+                </div>
+
+                <div class="col text-center">
+                    <span class="h6">Trade Instructions</span>
+                </div>
+
+            </header>
+
+            <div class="step_1">
+
+                <h3 class="text-center mb-5">What would you like to do?</h3>
+
+                <div class="row">
+                    <div class="col-3">
+                        <h1 class="text-end text-muted">
+                            <i class="far fa-inbox-out"></i>
+                        </h1>
+                    </div>
+                    <div class="col-9">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="doThis[]" value="sell" id="radioSell">
+                            
+                            <label class="form-check-label h5 mb-0" for="radioSell">
+                                Sell Gildcoin
+                            </label>
+
+                            <p>Once created, you offer will be available on the Buy Gildcoin page for potential buyers to see.</p>
+                        </div>
+                        <!-- /form-check -->
+                        
+                    </div>
+                </div>
+                <!-- /row -->
+
+                <div class="row mb-5">
+                    <div class="col-3">
+                        <h1 class="text-end text-muted">
+                            <i class="far fa-inbox-in"></i>
+                        </h1>
+                    </div>
+                    <div class="col-9">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="doThis[]" value="buy" id="radioBuy">
+                            
+                            <label class="form-check-label h5 mb-0" for="radioBuy">
+                                Buy Gildcoin
+                            </label>
+
+                            <p>Once created, you offer will be available on the Sell Gildcoin page for potential sellers to see.</p>
+                        </div>
+                        <!-- /form-check -->
+                        
+                    </div>
+                </div>
+                <!-- /row -->
+                
+            </div>
+            <!-- /step_1 -->
+            
+            <div class="sell_steps">
+
+                <div class="step_1 row row_step">
+                
+                    <div class="col-md-8">
+                        <h4 class="mb-5">
+                            <span class="text-muted">Step 1:</span> <span class="text-primary">Select a payment method</span>
+                        </h4>
+                    </div>
+                    <!-- /left -->
+
+                    <div class="col-md-4">
+                        <h5 class="text-muted">About This Step</h5>
+                        <p class="text-muted">We give you the option to accept different payment methods when making a transaction. Please make your selection on payment method and move onto the next step.</p>
+
+                        <ul class="text-muted">
+                            <li>Customers will sell Gildcoin for <strong>Kenya Shillings (KES)</strong></li>
+                            <li>You accept trades between <strong>2,500 KES</strong> and <strong>5,000 KES</strong></li>
+                            <li>Only users that meet your required minimum number of trades can begin a trade with you</li>
+                        </ul>
+                    </div>
+                    <!-- /right -->
+
+                </div>
+                <!-- /step_1 -->
+
+                <div class="step_2 row row_step">
+                
+                    <div class="col-md-8">
+                        <h4 class="mb-5">
+                            <span class="text-muted">Step 2:</span> <span class="text-primary">Trade pricing</span>
+                        </h4>
+
+                        <div class="contain">  
+
+                            <div class="row row_step_child">
+
+                                <div class="col-4">
+                                    <h6>Percentage above market rate that your offer will list at <a href="#none" class="link-secondary"><i class="fal fa-question-circle"></i></a></h6>
+                                </div>
+                                <!-- /left -->
+
+                                <div class="col-8">
+
+                                    <div class="d-flex mb-3 align-items-center">
+                                        
+                                        <div class="input-group input-group-percentage me-3">
+                                        
+                                            <a href="#none" class="btn btn-outline-secondary">
+                                                <i class="fal fa-minus"></i>
+                                            </a>
+                                            
+                                            <input name="percentage" type="number" class="form-control text-center">
+                                            
+                                            <a href="#none" class="btn btn-outline-secondary">
+                                                <i class="fal fa-plus"></i>
+                                            </a>
+                                            
+                                            <span class="input-group-text bg-white">%</span>
+                                        </div>
+                                        <!-- /input-group -->
+
+                                        <p class="m-0">on each sale</p>
+
+                                    </div>
+                                    <!-- /d-flex -->
+
+                                    <p class="m-0">Current Gilcoin market price: <strong>100.00 KES</strong></p>
+                                    
+                                    <p class="m-0">Chosen payment method: <strong>Mpesa</strong></p>
+                                    
+                                    <p class="m-0">Offer Price: <strong>120.00 KES</strong> per Gildcoin (<strong>120%</strong> of the market price)</p>
+                                    
+                                    <p class="m-0">I will <strong>get 20.00 KES above</strong> the market price for every Gildcoin I sell</p>
+
+                                </div>
+                                <!-- /left -->
+                            </div>
+                            <!-- /row -->
+
+                            <div class="row row_step_child">
+
+                                <div class="col-4">
+                                    <h6>Offer trade limits <a href="#none" class="link-secondary"><i class="fal fa-question-circle"></i></a></h6>
+                                </div>
+                                <!-- /left -->
+
+                                <div class="col-8">
+
+                                    <div class="row">
+                                        
+                                        <div class="col">
+                                            <p class="mb-2 fw-bold">Minimum trade amount</p>
+                                            
+                                            <div class="input-group mb-3">
+                                                <input type="number" name="minimum_trade" class="form-control">
+                                                <span class="input-group-text bg-white">KES</span>
+                                            </div>
+                                        </div>
+                                        <!-- /col -->
+
+                                        <div class="col">
+                                            <p class="mb-2 fw-bold">Maximum trade amount</p>
+                                            
+                                            <div class="input-group mb-3">
+                                                <input type="number" name="maximum_trade" class="form-control">
+                                                <span class="input-group-text bg-white">KES</span>
+                                            </div>
+                                        </div>
+                                        <!-- /col -->    
+                                    </div>
+                                    <!-- /row -->
+
+                                    <p class="m-0">Setting these limits will only allow people to start trades with you between your <strong>minimum</strong> and <strong>maximum</strong> trade amounts.</p>
+                                    <p class="m-0">Once a transaction is initiated, the exact trade equivalent in Gildcoin will be moved into escrow.</p>
+                                </div>
+                                <!-- /left -->
+                            </div>
+                            <!-- /row -->
+
+                        </div>
+                        <!-- /contain -->
+
+                    </div>
+                    <!-- /left -->
+
+                    <div class="col-md-4">
+                        <h5 class="text-muted">About This Step</h5>
+                        <p class="text-muted">Buyers often look for the best value and great vendor ratings. Choose a profit percentage that you think your target buyers will find attractive. Here, you can set your exact offer terms &amp; detailed instructions. Once you've made your selections you can move to the final step.</p>
+
+                        <p class="text-muted">If necessary you can configure your trade to automatically cancel if the buyer has not made payment by adjusting the auto-cancel time.</p>
+
+                        <ul class="text-muted">
+                            <li>Customers will pay you using <strong>Mpesa</strong> with <strong>Kenya Shillings (KES)</strong></li>
+                            <li>The escrow fee for your selected payment method is <strong>3%</strong></li>
+                            <li>You will earn <strong>20%</strong> for every sale</li>
+                            <li>You accept trades between <strong>2,500 KES</strong> and <strong>5,000 KES</strong></li>
+                            <li>Only users that meet your required minimum number of trades can begin to trade with you</li>
+                        </ul>
+                    </div>
+                    <!-- /right -->
+
+                </div>
+                <!-- /step_2 -->
+
+                <div class="step_3 row row_step">
+                
+                    <div class="col-md-8">
+                        <h4 class="mb-5">
+                            <span class="text-muted">Step 3:</span> <span class="text-primary">Trade instructions</span>
+                        </h4>
+
+                        <h5>Offer tags</h5>
+
+                        <input name="offer_tags" class="form-control mb-2" type="text">
+                        
+                        <p class="text-muted mb-4">Select a maximum of 3 tags seperated by a comma, that best describe your offer terms.</p>
+
+                        <h5>Offer label</h5>
+
+                        <input name="offer_label" class="form-control mb-2" type="text">
+                        
+                        <p class="text-muted mb-4">Make your offer stand out to other users with a catchy label. Your offer label can be upto 25 characters long and can contain letters, numbers, the apostrophe and the hyphen.</p>
+
+                        <h5>Offer terms for the buyer</h5>
+
+                        <textarea name="offer_terms" class="form-control mb-2" rows="4"></textarea>
+
+                        <p class="text-muted mb-4">The offer terms should very clearly outline what the trade partner can expect, whether it's a cash receipt or if they are required to visit an external site. Shown publicly on your offer listing, this portion is purely informational and should not have details on how to complete a trade.</p>
+
+                        <h5>Trade instructions</h5>
+
+                        <textarea name="trade_instructions" class="form-control mb-2" rows="4"></textarea>
+
+                        <p class="text-muted mb-4">These instructions are shown to your trade partner once the trade begins. Make them as clear and concise as possible, preferably as a bulleted list and include very clear action items to avoid confusion.</p>
+
+                    </div>
+                    <!-- /left -->
+
+                    <div class="col-md-4">
+                        <h5 class="text-muted">About This Step</h5>
+                        <p class="text-muted">When a customer clicks into your offer, your terms and instructions will tell them what to provide during the trade.</p>
+
+                        <p class="text-muted">Keep in mind that you should describe your terms as precisely and in as few words as possible.</p>
+
+                        <p class="text-muted">You also have the option of moderating who is able to select your offers. Filters such as verification requirements, trusted accounts and minimum trade volumes can be modified under the advanced options section.</p>
+
+                        <ul class="text-muted">
+                            <li>Customer will pay you using <strong>Mpesa</strong> with <strong>Kenya Shillings (KES)</strong></li>
+                            <li>The escrow fee for your selected payment method is 3%</li>
+                            <li>You accept trades between <strong>2,500 KES</strong> and <strong>5,000 KES</strong></li>
+                            <li>Only users that meet your required minimum number of trades can begin a trade with you</li>
+                        </ul>
+                        
+                    </div>
+                    <!-- /right -->
+
+                </div>
+                <!-- /step_3 -->
+                
+            </div>
+            <!-- /sell_steps -->
+
+            <div class="buy_steps">
+                
+            </div>
+            <!-- /buy_steps -->
+
+            
+        </div>
+        <!-- /container-fluid -->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!-- General site JS file -->
+        <script src="assets/js/site.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+
+        <script>
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+        
+        -->
+
+    </body>
+</html>

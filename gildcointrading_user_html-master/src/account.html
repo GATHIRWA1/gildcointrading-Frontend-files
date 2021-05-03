@@ -1,0 +1,1645 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- custom CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="assets/ico/favicon.png" type="image/png">
+        <link rel="icon" href="assets/ico/favicon.png" type="image/png">
+
+        <title>Account Settings • Gildcoin Trading</title>
+    </head>
+    <body class="bg-dark">
+
+        <nav class="navbar navbar_main sticky-top navbar-dark bg-dark navbar-expand-lg">
+            
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logos/gildcoin_logo_negative.svg" alt="" style="height: 40px;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                    <div class="d-flex ms-4 me-2">
+                        <div class="input-group input-group-buy">
+                            <a href="buy.html" class="btn btn-outline-primary px-4">Buy</a>
+                            
+                            <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                            
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="buy.html">
+                                        <div class="img" style="background-image: url(../assets/img/icon_bitcoin.jpg);"></div>
+                                        <div>
+                                            <h5>Buy Bitcoin</h5>
+                                            <p>Search for offers to buy Bitcoin</p>
+                                        </div>
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="fal fa-angle-right"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="buy.html">
+                                        <div class="img" style="background-image: url(../assets/img/icon.png);"></div>
+                                        <div>
+                                            <h5>Buy Gildcoin</h5>
+                                            <p>Search for offers to buy Gildcoin</p>
+                                        </div>
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="fal fa-angle-right"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /input-group-buy -->
+                    </div>
+                    <!-- /d-flex -->
+
+                    <div class="d-flex">
+                        <div class="input-group input-group-sell">
+                            <a href="sell.html" class="btn btn-outline-primary px-4">Sell</a>
+                            
+                            <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                            
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="sell.html">
+                                        <div class="img" style="background-image: url(../assets/img/icon_bitcoin.jpg);"></div>
+                                        <div>
+                                            <h5>Sell Bitcoin</h5>
+                                            <p>Search for offers to sell Bitcoin</p>
+                                        </div>
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="fal fa-angle-right"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="sell.html">
+                                        <div class="img" style="background-image: url(../assets/img/icon.png);"></div>
+                                        <div>
+                                            <h5>Sell Gildcoin</h5>
+                                            <p>Search for offers to sell Gildcoin</p>
+                                        </div>
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="fal fa-angle-right"></i>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /input-group-buy -->
+                    </div>
+                    <!-- /d-flex -->
+
+                    <a href="#none" data-bs-toggle="modal" data-bs-target="#offerModal" class="btn btn-dark btn-lg ms-3">Create an Offer</a>
+                    
+                    <div class="buttons ms-auto">
+
+                        <div class="btn-group btn-group_notif ms-2" role="group">
+
+                            <button id="btnGroupNotif" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="far fa-bell"></i>
+
+                                <span class="badge rounded-pill bg-danger">12</span>
+                            </button>
+                        
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="btnGroupNotif">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <p>You started a trade <span>Yhdg34SNX</span></p>
+                                        <p class="time">17 minutes ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <p>Trade <span>Yhdg34SNX</span> was cancelled by <span>DonaldTrump</span></p>
+                                        <p class="time">13 minutes ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <p>New trade message from <span>JoeBiden2342</span></p>
+                                        <p class="time">17 minutes ago</p>
+                                    </a>
+                                </li>
+                                <li class="all_notif">
+                                    <div class="d-grid px-2">
+                                        <a href="#none" class="btn btn-outline-secondary">View all notifications</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /btn-group -->
+
+                        <a href="wallet.html" class="acc_bal text-end">
+                            <span>Account Balance:</span>
+                            <h5 class="m-0">$20,987.00</h5>
+                        </a>
+                        
+                        <div class="btn-group btn-group_user" role="group">
+
+                            <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fal fa-user"></i> Gathirwa
+                            </button>
+                        
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark text-light" aria-labelledby="btnGroupDrop1">
+                                
+                                <li>
+                                    <a class="dropdown-item" href="account.html">
+                                        <i class="fal fa-user"></i> My Account
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                                <li><hr class="dropdown-divider"></li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" href="wallet.html">
+                                        <i class="far fa-wallet"></i> My Wallet
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" href="#none" data-bs-toggle="modal" data-bs-target="#depositModal">
+                                        <i class="fal fa-plus-circle"></i> Deposit Cash
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" href="wallet.html#withdraw">
+                                        <i class="fal fa-minus-circle"></i> Withdraw Cash
+                                    </a>
+                                </li>
+                                <!-- /li -->
+                                
+                                <li><hr class="dropdown-divider"></li>
+                                <!-- /li -->
+
+                                <li>
+                                    <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#logoutModal" href="#">
+                                        <i class="far fa-sign-out"></i> Log Out
+                                    </a>
+                                </li>
+                                <!-- /li -->
+
+                            </ul>
+                            <!-- /dropdown-menu -->
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /buttons -->
+                </div>
+                <!-- /navbar-collapse -->               
+            </div>
+            <!-- /container-fluid -->
+
+        </nav>
+        <!-- /nav -->
+
+        <div class="container-fluid text-light">
+            
+            <div class="row mt-2 gx-2">
+                
+                <div class="col-1">
+                    
+                    <ul class="nav nav_left flex-column text-center">
+                        
+                        <li class="nav-item">
+                            <a href="dash_board.html" class="nav-link">
+                                <h4><i class="fal fa-tachometer-alt-slow"></i></h4>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <h4><i class="fal fa-briefcase"></i></h4>
+                                <span>Trade Room</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="historical_prices.html" class="nav-link">
+                                <h4><i class="fal fa-chart-bar"></i></h4>
+                                <span>Historical Prices</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="trading_history.html" class="nav-link">
+                                <h4><i class="fal fa-history"></i></h4>
+                                <span>Trading History</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="wallet.html" class="nav-link">
+                                <h4><i class="far fa-wallet"></i></h4>
+                                <span>My Wallet</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                        <li class="nav-item">
+                            <a href="#none" data-bs-toggle="modal" data-bs-target="#leaderBoardModal" class="nav-link">
+                                <h4><i class="fal fa-award"></i></h4>
+                                <span>Leader Board</span>
+                            </a>
+                        </li>
+                        <!-- /li -->
+
+                    </ul>
+
+                </div>
+                <!-- /left col -->
+
+                <div class="col-9 offset-1">
+
+                    <div class="card bg-dark text-secondary mt-5">
+                        
+                        <div class="card-header">
+                            <h5 class="text-white my-2">My Account Settings</h5>
+                        </div>
+                        
+                        <div class="card-body">
+                            
+                            <div class="row row_acc g-0 mt-4">
+
+                                <div class="col-3">
+                                    
+                                    <div class="nav nav_acc flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                
+                                        <a class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">
+                                            <i class="fal fa-user"></i> 
+                                            Profile
+                                        </a>
+                                        
+                                        <a class="nav-link" id="v-pills-email-tab" data-bs-toggle="pill" href="#v-pills-email" role="tab" aria-controls="v-pills-email" aria-selected="false">
+                                            <i class="fal fa-envelope"></i> 
+                                            Contacts
+                                        </a>
+                                        
+                                        <a class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill" href="#v-pills-payment" role="tab" aria-controls="v-pills-payment" aria-selected="false">
+                                            <i class="fal fa-credit-card"></i> 
+                                            Payment Methods
+                                        </a>
+                                        
+                                        <a class="nav-link" id="v-pills-password-tab" data-bs-toggle="pill" href="#v-pills-password" role="tab" aria-controls="v-pills-password" aria-selected="false">
+                                            <i class="fal fa-unlock-alt"></i> 
+                                            Password
+                                        </a>
+                                    </div>
+                                
+                                </div>
+                                <!-- /col -->
+
+                                <div class="col-9">
+                                    
+                                    <div class="tab-content tab-content_account p-3" id="v-pills-tabContent">
+                                        
+                                        <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                            
+                                            <form action="">
+                                                
+                                                <div class="row">
+
+                                                    <div class="col-6">
+                                                        <h3 class="text-white">Profile</h3>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed illum quis unde illo laborum odit, rem facere consequuntur maxime. Exercitationem, voluptatum facilis tenetur ullam iusto assumenda beatae laudantium, animi.</p>
+                                                    </div>
+
+                                                    <div class="col-6">
+
+                                                        <label for="firstName" class="form-label text-white">First Name</label>
+
+                                                        <input type="text" name="first_name" class="form-control form-control-lg mb-3" id="firstName" placeholder="First Name" value="Samuel" required="required">
+
+                                                        <label for="lastName" class="form-label text-white">Last Name</label>
+
+                                                        <input type="text" name="last_name" class="form-control form-control-lg mb-3" id="lastName" placeholder="Last Name" value="Gathirwa" required="required">
+
+                                                        <label for="countryResidence" class="form-label text-white">Country of Permanent Residence</label>
+                                                        
+                                                        <select name="country" class="form-select form-select-lg mb-3" id="countryResidence" required="required">
+                                                            <option value="NULL">-</option>
+                                                            <option value="1" selected>Kenya</option>
+                                                            <option value="2">Tanzania</option>
+                                                            <option value="3">Uganda</option>
+                                                        </select>
+
+                                                        <button class="btn btn-lg btn-primary float-end" type="submit">
+                                                            <i class="fal fa-save"></i> Save
+                                                        </button>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- /row -->                                                
+                                            </form>
+                                        </div>
+                                        <!-- /tab-pane -->
+
+                                        <div class="tab-pane fade" id="v-pills-email" role="tabpanel" aria-labelledby="v-pills-email-tab">
+                                            <div class="row">
+
+                                                <div class="col-6">
+
+                                                    <h3 class="text-white">Contact Details</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cumque ab, consequuntur sequi perferendis, voluptate culpa laboriosam autem totam dolores aut necessitatibus rerum aspernatur placeat, repellendus omnis eum, praesentium? Nobis.</p>
+                                                </div>
+                                                <!-- /col -->
+
+                                                <div class="col-6">
+
+                                                    <form action="">
+
+                                                        <label for="" class="form-label text-white">Email Address</label>
+
+                                                        <input type="email" name="email" class="form-control form-control-lg mb-3" placeholder="Email Address" value="irungusamuel779@gmail.com" required="required">
+
+
+                                                        <label class="form-label text-white" for="">Phone Number</label>
+                                                        <div class="input-group input-group-phone mb-3">
+                                                                                        
+                                                            <input name="prefix_country" type="text" class="form-control form-control-lg prefix_country" placeholder="+" value="+254" maxlength="4" required="required">
+
+                                                            <input name="phone_number" type="text" class="form-control form-control-lg phone_number" placeholder="Number" value="719 381888" maxlength="12" required="required">
+
+                                                        </div>
+                                                        
+                                                        <button class="btn btn-lg btn-primary float-end" type="submit"><i class="fal fa-save"></i> Save</button>
+
+                                                    </form>
+                                                </div>
+                                                <!-- /col -->
+                                            </div>
+                                            <!-- /row -->
+                                        </div>
+                                        <!-- /tab-pane -->
+
+                                        <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab">
+                                            <h3 class="text-white">Payment Methods</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eligendi? Dolore laborum a id, molestias deserunt quam, voluptate, consequatur at excepturi dolor fuga ab nihil aspernatur quas porro eaque ea?</p>
+                                        </div>
+                                        <!-- /tab-pane -->
+
+                                        <div class="tab-pane fade" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
+                                            
+                                            <form action="">
+                                                <div class="row">
+
+                                                    <div class="col-6">
+                                                        
+                                                        <h3 class="text-white">Password</h3>
+                                                        
+                                                        <p>After a successful password update, you will be redirected to the login page where you can log in with your new password.</p>
+                                                    </div>
+
+                                                    <div class="col-6 mb-3">
+                                                        
+                                                        <label for="currentPassword" class="form-label text-white">Current Password</label>
+                                                        
+                                                        <input type="password" name="current_password" class="form-control form-control-lg" id="currentPassword" placeholder="Current Password" required="required">
+                                                        
+                                                        <p class="form-text text-muted mb-1">
+                                                        Provide your current password in order to change it.
+                                                        </p>
+
+                                                        <label for="newPassword" class="form-label text-white">New Password</label>
+                                                        
+                                                        <input type="password" name="new_password" class="form-control form-control-lg mb-3" id="newPassword" placeholder="New Password" required="required">
+
+                                                        <label for="newPasswordConfirm" class="form-label text-white">New Password Confirmation</label>
+                                                        
+                                                        <input type="password" name="new_password_confirm" class="form-control form-control-lg" id="newPasswordConfirm" placeholder="Confirm New Password" required="required">
+
+                                                    </div>
+                                                </div>
+                                                <!-- /row -->
+
+                                                <div class="row">
+
+                                                    <div class="col-12">
+                                                        <button class="btn btn-lg btn-primary float-end" type="submit"><i class="fal fa-save"></i> Save Password</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- /row -->
+                                            </form>
+                                            
+                                        </div>
+                                        <!-- /tab-pane -->
+                                    </div>
+                                    <!-- /tab-content --> 
+
+                                </div>
+                                <!-- /col -->
+                                
+                            </div>
+                            <!-- /row -->
+
+                        </div>
+                        <!-- /card-body -->
+                    </div>
+                    <!-- /card -->
+                    
+                </div>
+                <!-- /right col -->
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container-fluid -->
+
+        <nav class="navbar navbar_bottom fixed-bottom navbar-dark bg-dark text-light">
+            
+            <div class="container-fluid">
+                
+                <div class="row">
+                    
+                    <div class="col-6">
+                        <i class="far fa-clock"></i> Current Time: <span class="timeInsert">12:23:43</span> • 14 January, 2020 (GMT +3)
+                    </div>
+                    <!-- /col -->
+
+                    <div class="col-6 text-end">
+                        <a href="#none" class="btn btn-outline-secondary btn-sm"><i class="far fa-user-friends"></i> Partnerships</a>
+
+                        <a href="#none" class="btn btn-primary btn-sm"><i class="far fa-comments"></i> Support</a>
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container-fluid -->
+
+        </nav>
+        <!-- /nav -->
+
+        <div class="toast toast_cookies d-flex" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                    
+            <div class="toast-body">
+                We use cookies to understand how you use our site and to improve your experience. By continuing to use our website you agree to their use. <a href="#none">More info</a>
+            </div>
+            
+            <button type="button" class="btn-close ms-auto me-2 mt-2" data-bs-dismiss="toast" aria-label="Close"></button>
+        
+        </div>                
+        <!-- /toast -->
+
+        <!-- modals -->
+        
+        <div class="modal modal_logout fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        
+                        <h5 class="modal-title" id="logoutModalLabel">
+                            Log Out
+                        </h5>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <p class="mb-0 fs-5">Gathirwa, are you sure you want to log out?</p>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+                        
+                        <a href="#none" class="btn btn-primary"><i class="far fa-sign-out"></i>
+                            Log Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /logoutModal -->
+
+        <div class="modal modal_deposit fade" id="depositModal" tabindex="-1" aria-labelledby="depositModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-lg">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        
+                        <h5 class="modal-title" id="depositModalLabel">
+                            Deposit Cash
+                        </h5>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- /modal-header -->
+                    
+                    <div class="modal-body">
+                        <div class="container-fluid container-fluid-deposit">
+                            <div class="row g-2">
+                                
+                                <div class="col-md-3 col_pills">
+                                    
+                                    <div class="nav flex-column nav-pills nav-pills_visa" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        
+                                        <a class="nav-link active" id="v-pills-1-tab" data-bs-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+                                            
+                                            <div class="row g-1">
+                                                <div class="col-3">
+                                                    <img src="assets/img/logos/visa_mastercard.svg" class="img-fluid" style="width: 40px;" alt="">
+                                                </div>
+                                                
+                                                <div class="col-9">
+                                                    <p class="p-0 m-0 text-secondary">Visa / Mastercard</p>
+                                                    <p class="p-0 m-0 text-muted">Instant</p>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                        <!-- /nav-link -->
+                                        
+                                        <a class="nav-link" id="v-pills-2-tab" data-bs-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">
+                                            
+                                            <div class="row g-1">
+                                                
+                                                <div class="col-3">
+                                                    <img src="assets/img/logos/mpesa.svg" class="img-fluid" style="width: 40px;" alt="">
+                                                </div>
+                                                
+                                                <div class="col-9">
+                                                    <p class="p-0 m-0 text-secondary">Mpesa</p>
+                                                    <p class="p-0 m-0 text-muted">Instant</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- /nav-link -->
+
+                                    </div>
+                                    <!-- /nav -->
+
+                                </div>
+                                <!-- /col -->
+
+                                <div class="col-md-9">
+                                    
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        
+                                        <div class="tab-pane tab-pane_visa fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                                            
+                                            <form action="wallet.html">
+                                                
+                                                <div class="row row_cards mb-3 g-0">
+                                                
+                                                    <div class="col-8">
+                                                        
+                                                        <div class="card-a p-3 pt-5">
+                                                            
+                                                            <div class="mb-3 mt-3 pe-3">
+                                                                <input name="card_number" type="number" class="form-control form-control-lg" placeholder="Card Number" required="required">
+                                                            </div>
+
+                                                            <div class="row g-2 pe-3">
+                                                                
+                                                                <div class="col-5 valid_thru align-content-center mb-3">
+                                                                    <p class="m-0 text-end text-light">VALID</p>
+                                                                    <p class="m-0 text-end text-light">THRU</p>
+                                                                </div>
+                                                                
+                                                                <div class="col-3 mb-3">
+                                                                    
+                                                                     <input name="mm" type="number" class="form-control form-control-lg" placeholder="MM" maxlength="2" required="required">
+
+                                                                </div>
+                                                                
+                                                                <div class="col-1 align-items-middle text-light"> 
+                                                                    <h1 class="slash text-center m-0">/</h1> 
+                                                                </div>
+                                                                
+                                                                <div class="col-3 mb-3">
+
+                                                                    <input name="yy" type="number" class="form-control form-control-lg" placeholder="YY" maxlength="2" required="required">
+                                                                    
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- /row -->
+
+                                                             <div class="pe-3">
+                                                                <input name="card_holder" type="text" class="form-control form-control-lg" placeholder="Card Holder" required="required">
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- /card-a -->
+
+                                                    </div>
+                                                    <!-- /col -->
+                                                    
+                                                    <div class="col-4">
+                                                        
+                                                        <div class="card-b p-3">
+                                                            
+                                                            <div class="strip"></div>
+
+                                                            <div class="row">
+                                                                <div class="col-8 offset-2">
+                                                                    
+                                                                    <input name="cvc" type="number" class="cvc form-control form-control-lg mb-0" placeholder="CVC" maxlength="3" required="required">
+
+                                                                    <p class="cvc_text text-light"><small>The last 3 digits on the reverse</small></p>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /col -->
+                                                </div>
+                                                <!-- /row -->
+
+                                                <div class="row g-1">
+
+                                                    <div class="col-3">
+                                                        
+                                                        <select name="currency" class="form-select form-select-lg" required="required">
+                                                            <option selected>Currency</option>
+                                                            <option value="1">&#36; USD</option>
+                                                            <option value="2">&#128; EUR</option>
+                                                            <option value="3">&#163; GBP</option>
+                                                        </select>
+
+                                                    </div>
+                                                    <!-- /col -->
+
+                                                    <div class="col-6">
+                                                        
+                                                            
+                                                        <div class="input-group">
+
+                                                            <span class="input-group-text">&#36;</span>
+                                                            
+                                                            <input name="amount" type="text" class="form-control form-control-lg" placeholder="Amount" required="required">
+
+                                                        </div>
+                                                            
+
+                                                    </div>
+                                                    <!-- /col -->
+
+                                                    <div class="col-3">
+                                                        <div class="d-grid">
+                                                            <button class="btn btn-lg btn-primary" type="submit">Continue</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /col -->
+
+                                                </div>
+                                                <!-- /row -->
+
+                                            </form>
+                                        
+
+                                        </div>
+                                        <!-- /tab-pane -->
+                                        
+                                        <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                                            MPESA details here.
+                                        </div>
+                                        <!-- /tab-pane -->
+                                    </div>
+                                    <!-- /tab-content -->
+
+                                </div>
+                                <!-- /col -->
+
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /container-fluid -->
+                    </div>
+                    <!-- /modal-body -->
+                </div>
+            </div>
+        </div>
+        <!-- /depositModal -->
+
+        <div class="modal modal_leader_board fade" id="leaderBoardModal" tabindex="-1" aria-labelledby="leaderBoardModalLabel" aria-hidden="true">
+            
+            <div class="modal-dialog modal-dialog-scrollable modal-sm">
+                
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        
+                        <h5 class="modal-title" id="leaderBoardModalLabel">
+                            Leader Board
+                        </h5>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- /modal-header -->
+                    
+                    <div class="modal-body">
+                        <p class="mb-0 fs-5">Leaders of the week</p>
+
+                        <table class="table table_leader_board table-sm table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="width: 1%;"></th>
+                                    <th style="width: 1%;"></th>
+                                    <th></th>
+                                    <th style="width: 1%;"></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Joe Biden</td>
+                                    <td>$20,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Donald Trump</td>
+                                    <td>$19,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Barack Obama</td>
+                                    <td>$18,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Hillary Clinton</td>
+                                    <td>$17,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>John McCain</td>
+                                    <td>$16,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Susan Rice</td>
+                                    <td>$15,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>James Brown</td>
+                                    <td>$14,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>8</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Michael Jackson</td>
+                                    <td>$13,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>James Kamau</td>
+                                    <td>$12,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>10</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Michelle Obama</td>
+                                    <td>$11,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>11</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Michael Pence</td>
+                                    <td>$10,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>12</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Larry King</td>
+                                    <td>$9,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>13</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Jackson</td>
+                                    <td>$8,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>14</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>David Peterson</td>
+                                    <td>$7,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>15</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Jeremy Wahome</td>
+                                    <td>$6,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>16</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Mswati Mfalme</td>
+                                    <td>$5,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>17</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Anthony Biden</td>
+                                    <td>$4,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>18</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Tarrus Riley</td>
+                                    <td>$3,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>19</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Uhuru Kenyatta</td>
+                                    <td>$2,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>20</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Mercy Rincuni</td>
+                                    <td>$1,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>21</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Christa Marianne</td>
+                                    <td>$900</td>
+                                </tr>
+
+                                <tr>
+                                    <td>22</td>
+                                    <td>
+                                        <img src="assets/img/flags/us.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$800</td>
+                                </tr>
+
+                                <tr>
+                                    <td>23</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>James Mwangi</td>
+                                    <td>$700</td>
+                                </tr>
+
+                                <tr>
+                                    <td>24</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>David Adolwa</td>
+                                    <td>$600</td>
+                                </tr>
+
+                                <tr>
+                                    <td>25</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Mary Wanjiku</td>
+                                    <td>$500</td>
+                                </tr>
+
+                                <tr>
+                                    <td>26</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$400</td>
+                                </tr>
+
+                                <tr>
+                                    <td>27</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$300</td>
+                                </tr>
+
+                                <tr>
+                                    <td>28</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$200</td>
+                                </tr>
+
+                                <tr>
+                                    <td>29</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$100</td>
+                                </tr>
+
+                                <tr>
+                                    <td>30</td>
+                                    <td>
+                                        <img src="assets/img/flags/kenya.jpg" alt="">
+                                    </td>
+                                    <td>Samuel Gathirwa</td>
+                                    <td>$90</td>
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    <!-- /modal-body -->
+                    
+                </div>
+                <!-- /modal-content -->
+            </div>
+            <!-- /modal-dialog -->
+        </div>
+        <!-- /leaderBoardModal -->
+
+        <div class="modal modal_offer fade" id="offerModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        
+                        <h5 class="modal-title" id="offerModalLabel">
+                            <i class="fal fa-plus"></i> Create Offer
+                        </h5>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- /modal-header -->
+                    
+                    <div class="modal-body">
+                        <div class="container-fluid container-fluid-buy">
+
+                            <header class="row g-0 header_steps py-4 mb-4">
+                    
+                                <div class="col text-center active">
+                                    <span class="h6">Payment Method</span>
+                                </div>
+
+                                <div class="col text-center">
+                                    <span class="h6">Trade Pricing</span>
+                                </div>
+
+                                <div class="col text-center">
+                                    <span class="h6">Trade Instructions</span>
+                                </div>
+
+                            </header>
+                            
+                            <div class="tab-content tab-content-steps">
+                
+                                <div class="tab-pane fade show active" id="step_0" role="tabpanel">
+                                    
+                                    <h3 class="text-center mb-5">What would you like to do?</h3>
+
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <h1 class="text-end text-muted">
+                                                <i class="far fa-inbox-out"></i>
+                                            </h1>
+                                        </div>
+                                        <div class="col-9">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="doThis[]" value="sell" id="radioSell">
+                                                
+                                                <label class="form-check-label h5 mb-0" for="radioSell">
+                                                    Sell Gildcoin
+                                                </label>
+
+                                                <p>Once created, you offer will be available on the Buy Gildcoin page for potential buyers to see.</p>
+                                            </div>
+                                            <!-- /form-check -->
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- /row -->
+
+                                    <div class="row mb-5">
+                                        <div class="col-3">
+                                            <h1 class="text-end text-muted">
+                                                <i class="far fa-inbox-in"></i>
+                                            </h1>
+                                        </div>
+                                        <div class="col-9">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="doThis[]" value="buy" id="radioBuy">
+                                                
+                                                <label class="form-check-label h5 mb-0" for="radioBuy">
+                                                    Buy Gildcoin
+                                                </label>
+
+                                                <p>Once created, you offer will be available on the Sell Gildcoin page for potential sellers to see.</p>
+                                            </div>
+                                            <!-- /form-check -->
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- /row -->
+
+                                </div>
+                                <!-- /#step_0 -->
+                                
+                                <div class="tab-pane fade" id="step_1" role="tabpanel">
+                                    
+                                    <div class="row row_step">
+                                
+                                        <div class="col-md-8">
+                                            <h4 class="mb-5">
+                                                <span class="text-muted">Step 1:</span> <span class="text-primary">Select a payment method</span>
+                                            </h4>
+
+                                            <h6>Search all payment methods</h6>
+
+                                            <div class="input-group mb-4">
+                                                <div class="input-group-text bg-white">
+                                                    <i class="fal fa-search"></i>
+                                                </div>
+                                                <input type="text" name="search_payment_menthods" class="form-control">
+                                            </div>
+
+                                            <div class="row mb-4">
+                                                
+                                                <div class="col-4">
+                                                    
+                                                    <h6>Choose Category</h6>
+                                                    
+                                                    <div class="list-group list-group-payment-method-categories list-group-flush" id="categoriesList" role="tablist">
+                                                        
+                                                        <a href="#tab_1" class="list-group-item list-group-item-action active" role="tab" data-bs-toggle="list">Bank Transfers</a>    
+                                                        
+                                                        <a href="#tab_2" class="list-group-item list-group-item-action" role="tab" data-bs-toggle="list">Online Wallets</a>    
+                                                        
+                                                        <a href="#tab_3" class="list-group-item list-group-item-action" role="tab" data-bs-toggle="list">Gift Cards</a>    
+                                                        
+                                                        <a href="#tab_4" class="list-group-item list-group-item-action" role="tab" data-bs-toggle="list">Cash Payments</a>    
+                                                        
+                                                        <a href="#tab_5" class="list-group-item list-group-item-action" role="tab" data-bs-toggle="list">Debit/Credit Cards</a>    
+                                                        
+                                                        <a href="#tab_6" class="list-group-item list-group-item-action" role="tab" data-bs-toggle="list">Digital Currencies</a>    
+                                                        
+                                                        <a href="#tab_7" class="list-group-item list-group-item-action" role="tab" data-bs-toggle="list">Goods &amp; Services</a>
+
+                                                    </div>
+                                                    <!-- /list-group -->
+                                                </div>
+                                                <!-- /col -->
+                                                
+                                                <div class="col-8">
+                                                    <h6>Select payment method below</h6>
+
+                                                    <div class="tab-content">
+                                                        
+                                                        <div id="tab_1" class="tab-pane fade show active" role="tabpanel">
+                                                            
+                                                            <div class="list-group list-group-flush">
+                                                                
+                                                                <label class="list-group-item list-group-item-action">
+                                                                    <input class="form-check-input me-1" type="radio" name="payment_method[]" value="">
+                                                                    Standard Chartered Bank
+                                                                </label>
+
+                                                                <label class="list-group-item list-group-item-action">
+                                                                    <input class="form-check-input me-1" type="radio" name="payment_method[]"value="">
+                                                                    Barclays Bank
+                                                                </label>
+
+                                                                <label class="list-group-item list-group-item-action">
+                                                                    <input class="form-check-input me-1" type="radio" name="payment_method[]"value="">
+                                                                    Citi Bank
+                                                                </label>
+
+                                                            </div>
+                                                            <!-- /list-group -->
+
+                                                        </div>
+                                                        <!-- /tab-pane -->
+
+                                                        <div id="tab_2" class="tab-pane fade" role="tabpanel">
+                                                            222
+                                                        </div>
+                                                        <!-- /tab-pane -->
+
+                                                        <div id="tab_3" class="tab-pane fade" role="tabpanel">
+                                                            333
+                                                        </div>
+                                                        <!-- /tab-pane -->
+
+                                                        <div id="tab_4" class="tab-pane fade" role="tabpanel">
+                                                            444
+                                                        </div>
+                                                        <!-- /tab-pane -->
+
+                                                        <div id="tab_5" class="tab-pane fade" role="tabpanel">
+                                                            555
+                                                        </div>
+                                                        <!-- /tab-pane -->
+
+                                                        <div id="tab_6" class="tab-pane fade" role="tabpanel">
+                                                            666
+                                                        </div>
+                                                        <!-- /tab-pane -->
+
+                                                        <div id="tab_7" class="tab-pane fade" role="tabpanel">
+                                                            777
+                                                        </div>
+                                                        <!-- /tab-pane -->
+
+                                                    </div>
+                                                    <!-- /tab-content -->
+                                                </div>
+                                                <!-- /col -->
+                                            </div>
+                                            <!-- /row -->
+
+                                            <h6>Preferred currency</h6>
+                                            
+
+                                            <select class="form-select mb-2">
+                                                <option value="1">US Dollar (USD)</option>
+                                                <option value="2">Kenyan Shilling (KES)</option>
+                                            </select>
+
+                                            <p>Your offer will be posted and completed in this currency. For example, if you select USD, your offer will be visible for everybody looking to sell Gildcoin using USD.</p>
+                                        </div>
+                                        <!-- /left -->
+
+                                        <div class="col-md-4">
+                                            <h5 class="text-muted">About This Step</h5>
+                                            <p class="text-muted">We give you the option to accept different payment methods when making a transaction. Please make your selection on payment method and move onto the next step.</p>
+
+                                            <ul class="text-muted">
+                                                <li>Customers will sell Gildcoin for <strong>Kenya Shillings (KES)</strong></li>
+                                                <li>You accept trades between <strong>2,500 KES</strong> and <strong>5,000 KES</strong></li>
+                                                <li>Only users that meet your required minimum number of trades can begin a trade with you</li>
+                                            </ul>
+                                        </div>
+                                        <!-- /right -->
+
+                                    </div>
+                                    <!-- /row_step -->
+
+                                </div>
+                                <!-- /#step_1 -->
+                                
+                                <div class="tab-pane fade" id="step_2" role="tabpanel">
+                                    
+                                    <div class="row row_step">
+                                
+                                        <div class="col-md-8">
+                                            <h4 class="mb-5">
+                                                <span class="text-muted">Step 2:</span> <span class="text-primary">Trade pricing</span>
+                                            </h4>
+
+                                            <h6 class="mb-3">Choose Gildcoin rate you want to use</h6>
+
+                                            <div class="row mb-3">
+                                                
+                                                <div class="col">
+                                                    <div class="pane">
+                                                        
+                                                        <div class="form-check mb-2">
+                                                            <input name="priceType[]" value="market_price" class="form-check-input" type="radio" value="" id="marketPrice">
+                                                            <label class="form-check-label h6" for="marketPrice">Market price</label>
+                                                        </div>
+
+                                                        <p>Your offer's selling price will change according to the market price of Gildcoin.</p>
+                                                    </div>
+                                                    <!-- /pane -->
+                                                </div>
+                                                <!-- /col -->
+
+                                                <div class="col">
+                                                    <div class="pane">
+                                                        
+                                                        <div class="form-check mb-2">
+                                                            <input name="priceType[]" value="fixed_price" class="form-check-input" type="radio" value="" id="fixedPrice">
+                                                            <label class="form-check-label h6" for="fixedPrice">Fixed price</label>
+                                                        </div>
+
+                                                        <p>Your offer's selling price is locked when the offer is created, and won't change with the market price of Gildcoin.</p>
+                                                    </div>
+                                                    <!-- /pane -->
+                                                </div>
+                                                <!-- /col -->
+                                            </div>
+                                            <!-- /row -->
+
+                                            <div class="contain">  
+
+                                                <div class="row row_step_child">
+
+                                                    <div class="col-4">
+                                                        <h6>Percentage above market rate that your offer will list at <a href="#none" class="link-secondary"><i class="fal fa-question-circle"></i></a></h6>
+                                                    </div>
+                                                    <!-- /left -->
+
+                                                    <div class="col-8">
+
+                                                        <div class="d-flex mb-3 align-items-center">
+                                                            
+                                                            <div class="input-group input-group-percentage me-3">
+                                                            
+                                                                <a href="#none" class="btn btn-outline-secondary">
+                                                                    <i class="fal fa-minus"></i>
+                                                                </a>
+                                                                
+                                                                <input name="percentage" type="number" class="form-control text-center">
+                                                                
+                                                                <a href="#none" class="btn btn-outline-secondary">
+                                                                    <i class="fal fa-plus"></i>
+                                                                </a>
+                                                                
+                                                                <span class="input-group-text bg-white">%</span>
+                                                            </div>
+                                                            <!-- /input-group -->
+
+                                                            <p class="m-0">on each sale</p>
+
+                                                        </div>
+                                                        <!-- /d-flex -->
+
+                                                        <p class="m-0">Current Gilcoin market price: <strong>100.00 KES</strong></p>
+                                                        
+                                                        <p class="m-0">Chosen payment method: <strong>Mpesa</strong></p>
+                                                        
+                                                        <p class="m-0">Offer Price: <strong>120.00 KES</strong> per Gildcoin (<strong>120%</strong> of the market price)</p>
+                                                        
+                                                        <p class="m-0">I will <strong>get 20.00 KES above</strong> the market price for every Gildcoin I sell</p>
+
+                                                    </div>
+                                                    <!-- /left -->
+                                                </div>
+                                                <!-- /row -->
+
+                                                <div class="row row_step_child">
+
+                                                    <div class="col-4">
+                                                        <h6>Offer trade limits <a href="#none" class="link-secondary"><i class="fal fa-question-circle"></i></a></h6>
+
+                                                        <div class="btn-group">
+                                                            
+                                                            <a href="#none" class="btn btn-sm btn-outline-secondary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Min/max range</a>
+                                                            
+                                                            <a href="#none" class="btn btn-sm btn-outline-secondary" data-bs-toggle="button" autocomplete="off">Exact Amount</a>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /left -->
+
+                                                    <div class="col-8">
+
+                                                        <div class="row">
+                                                            
+                                                            <div class="col">
+                                                                <p class="mb-2 fw-bold">Minimum trade amount</p>
+                                                                
+                                                                <div class="input-group mb-3">
+                                                                    <input type="number" name="minimum_trade" class="form-control">
+                                                                    <span class="input-group-text bg-white">KES</span>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /col -->
+
+                                                            <div class="col">
+                                                                <p class="mb-2 fw-bold">Maximum trade amount</p>
+                                                                
+                                                                <div class="input-group mb-3">
+                                                                    <input type="number" name="maximum_trade" class="form-control">
+                                                                    <span class="input-group-text bg-white">KES</span>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /col -->    
+                                                        </div>
+                                                        <!-- /row -->
+
+                                                        <p class="m-0">Setting these limits will only allow people to start trades with you between your <strong>minimum</strong> and <strong>maximum</strong> trade amounts.</p>
+                                                        <p class="m-0">Once a transaction is initiated, the exact trade equivalent in Gildcoin will be moved into escrow.</p>
+                                                    </div>
+                                                    <!-- /left -->
+                                                </div>
+                                                <!-- /row -->
+
+                                                <div class="row row_step_child">
+                                                    
+                                                    <div class="col-4">
+                                                        <h6>Offer time limit</h6>
+                                                    </div>
+                                                    <!-- /col -->
+                                                    
+                                                    <div class="col-8">
+
+                                                        <div class="input-group input-group-time mb-3">
+                                                            <a href="#none" class="btn btn-outline-secondary">
+                                                                <i class="fal fa-minus"></i>
+                                                            </a>
+                                                            <input type="number" name="offer_time_limit" class="form-control text-center">
+                                                            <a href="#none" class="btn btn-outline-secondary">
+                                                                <i class="fal fa-plus"></i>
+                                                            </a>
+                                                            <div class="input-group-text bg-white">Minutes</div>
+                                                        </div>
+
+                                                        <p>This indicates the amount of time your trade partner has to make their payment. The trade will <strong>automatically be canceled if the buyer has not clicked "Paid" before the payment window has expired.</strong></p>    
+                                                    </div>
+                                                    <!-- /col -->
+                                                </div>
+                                                <!-- /row -->
+
+                                            </div>
+                                            <!-- /contain -->
+
+                                        </div>
+                                        <!-- /left -->
+
+                                        <div class="col-md-4">
+                                            <h5 class="text-muted">About This Step</h5>
+                                            <p class="text-muted">Buyers often look for the best value and great vendor ratings. Choose a profit percentage that you think your target buyers will find attractive. Here, you can set your exact offer terms &amp; detailed instructions. Once you've made your selections you can move to the final step.</p>
+
+                                            <p class="text-muted">If necessary you can configure your trade to automatically cancel if the buyer has not made payment by adjusting the auto-cancel time.</p>
+
+                                            <ul class="text-muted">
+                                                <li>Customers will pay you using <strong>Mpesa</strong> with <strong>Kenya Shillings (KES)</strong></li>
+                                                <li>The escrow fee for your selected payment method is <strong>3%</strong></li>
+                                                <li>You will earn <strong>20%</strong> for every sale</li>
+                                                <li>You accept trades between <strong>2,500 KES</strong> and <strong>5,000 KES</strong></li>
+                                                <li>Only users that meet your required minimum number of trades can begin to trade with you</li>
+                                            </ul>
+                                        </div>
+                                        <!-- /right -->
+
+                                    </div>
+                                    <!-- /row -->
+
+                                </div>
+                                <!-- /#step_2 -->
+
+                                <div class="tab-pane fade" id="step_3" role="tabpanel">
+                                    
+                                    <div class="row row_step">
+                                
+                                        <div class="col-md-8">
+                                            <h4 class="mb-5">
+                                                <span class="text-muted">Step 3:</span> <span class="text-primary">Trade instructions</span>
+                                            </h4>
+
+                                            <h5>Offer tags</h5>
+
+                                            <input name="offer_tags" class="form-control mb-2" type="text">
+                                            
+                                            <p class="text-muted mb-4">Select a maximum of 3 tags seperated by a comma, that best describe your offer terms.</p>
+
+                                            <h5>Offer label</h5>
+
+                                            <input name="offer_label" class="form-control mb-2" type="text">
+                                            
+                                            <p class="text-muted mb-4">Make your offer stand out to other users with a catchy label. Your offer label can be upto 25 characters long and can contain letters, numbers, the apostrophe and the hyphen.</p>
+
+                                            <h5>Offer terms for the buyer</h5>
+
+                                            <textarea name="offer_terms" class="form-control mb-2" rows="4" placeholder="Write your terms here"></textarea>
+
+                                            <p class="text-muted mb-4">The offer terms should very clearly outline what the trade partner can expect, whether it's a cash receipt or if they are required to visit an external site. Shown publicly on your offer listing, this portion is purely informational and should not have details on how to complete a trade.</p>
+
+                                            <h5>Trade instructions</h5>
+
+                                            <textarea name="trade_instructions" class="form-control mb-2" rows="4" placeholder="List out your instructions for your trade partner here"></textarea>
+
+                                            <p class="text-muted mb-4">These instructions are shown to your trade partner once the trade begins. Make them as clear and concise as possible, preferably as a bulleted list and include very clear action items to avoid confusion.</p>
+
+                                            <h5>Verification</h5>
+
+                                            <div class="form-check mb-5">
+                                                <input class="form-check-input" type="checkbox" name="verified_id" value="" id="verifiedID">
+                                                <label class="form-check-label" for="verifiedID">Require your trade partner to have verified their ID</label>
+                                            </div>
+
+                                            <h5 class="bg-light p-2 mb-3"><i class="far fa-sliders-h"></i> Advanced Options</h5>
+
+                                            <h6>Minimum trades required</h6>
+
+                                            <p class="mb-2">Only users that meet your required minimum number of trades can begin a trade with you</p>
+
+                                            <div class="min_trades d-flex align-items-center">
+                                                <input name="minimum_trades" class="form-control me-3 text-center" type="number">
+                                                <p class="mb-0">past trades</p>
+                                            </div>
+                                            
+
+                                        </div>
+                                        <!-- /left -->
+
+                                        <div class="col-md-4">
+                                            <h5 class="text-muted">About This Step</h5>
+                                            <p class="text-muted">When a customer clicks into your offer, your terms and instructions will tell them what to provide during the trade.</p>
+
+                                            <p class="text-muted">Keep in mind that you should describe your terms as precisely and in as few words as possible.</p>
+
+                                            <p class="text-muted">You also have the option of moderating who is able to select your offers. Filters such as verification requirements, trusted accounts and minimum trade volumes can be modified under the advanced options section.</p>
+
+                                            <ul class="text-muted">
+                                                <li>Customer will pay you using <strong>Mpesa</strong> with <strong>Kenya Shillings (KES)</strong></li>
+                                                <li>The escrow fee for your selected payment method is 3%</li>
+                                                <li>You accept trades between <strong>2,500 KES</strong> and <strong>5,000 KES</strong></li>
+                                                <li>Only users that meet your required minimum number of trades can begin a trade with you</li>
+                                            </ul>
+                                            
+                                        </div>
+                                        <!-- /right -->
+
+                                    </div>
+                                    <!-- /row -->
+
+                                </div>
+                                <!-- /#step_3 -->
+
+                            </div>
+                            <!-- /tab-content-steps -->
+
+                        </div>
+                        <!-- /container-fluid -->
+                    </div>
+                    <!-- /modal-body -->
+
+                    <div class="modal-footer">
+
+                        <!-- delete these tabs later -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#step_0" type="button" role="tab" aria-selected="true">Step 0: Buy / Sell</button>
+                            </li>
+                            
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#step_1" type="button" role="tab" aria-selected="false">Step 1: Payment Method</button>
+                            </li>
+                            
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#step_2" type="button" role="tab" aria-selected="false">Step 2: Trade Pricing</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#step_3" type="button" role="tab" aria-selected="false">Step 3: Trade Instructions</button>
+                            </li>
+                        </ul>
+                        <!-- /delete these tabs later -->
+
+                        <button type="button" class="btn btn-outline-secondary  me-auto" data-bs-dismiss="modal">
+                            <i class="fal fa-trash-alt"></i> Delete Offer
+                        </button>
+
+                        <a href="#none" class="btn btn-outline-secondary">
+                            <i class="fal fa-arrow-left"></i> Previous Step
+                        </a>
+                                                
+                        <a href="#none" class="btn btn-primary">
+                            Next Step <i class="fal fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <!-- /modal-footer -->
+
+                </div>
+            </div>
+        </div>
+        <!-- /offerModal -->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <!-- General site JS file -->
+        <script src="assets/js/site.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+
+        <script>
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+        
+        -->
+
+    </body>
+</html>

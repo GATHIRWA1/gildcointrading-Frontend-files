@@ -1,0 +1,12 @@
+node_modules
+
+# Hidden system generated files
+.__MACOSX
+*/.__MACOSX
+.DS_Store
+*/.DS_Store
+
+# Specific files types
+*.psd
+*/*.psd
+*.json
